@@ -135,7 +135,7 @@ const CreatorPaymentsExplorer = () => {
               header: "Total Amount",
               accessorKey: "totalAmount",
               cell: (cell) => {
-                return formatJoy(cell.getValue());
+                return formatJoy(cell.getValue() as string);
               },
             },
             { header: "Payment Count", accessorKey: "count" },
@@ -164,7 +164,7 @@ const CreatorPaymentsExplorer = () => {
               header: "Amount",
               accessorKey: "amount",
               cell: (cell) => {
-                return formatJoy(cell.getValue());
+                return formatJoy(cell.getValue() as string);
               },
             },
             { header: "Block", accessorKey: "inBlock" },
